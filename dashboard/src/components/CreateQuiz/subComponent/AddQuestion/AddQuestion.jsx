@@ -187,7 +187,7 @@ const AddQuestion = ({ quiztype, quizName, setIsCreateQuiz, setShowMore }) => {
       })
       .catch((err) => {
         console.log(err);
-        toast.error(err.message);
+        toast.error(err.data.message);
       });
   };
 

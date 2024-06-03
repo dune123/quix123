@@ -70,7 +70,9 @@ const Analytics = ({ setIsAnalytics }) => {
   }
 
   const handleShare = (quizId) => {
-    const link = `http://localhost:5173/quiz/${quizId}`
+    const protocol = window.location.protocol;
+    const host = window.location.host;
+    const link=`${protocol}//${host}/quiz/${quizId}`
     navigator.clipboard.writeText(link)
     toast.success("Link Copied on clipboard")
   }

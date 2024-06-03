@@ -6,7 +6,9 @@ import "react-toastify/dist/ReactToastify.css";
 const ShareQuiz = ({setShowFinalCard,quizId}) => {
 
   const handleShare=()=>{
-    const link=`http://localhost:5173/quiz/${quizId}`
+    const protocol = window.location.protocol;
+    const host = window.location.host;
+    const link=`${protocol}//${host}/quiz/${quizId}`
     navigator.clipboard.writeText(link)
     toast.success("Link Copied on clipboard")
   }

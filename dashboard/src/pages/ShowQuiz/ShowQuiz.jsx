@@ -19,7 +19,6 @@ const ShowQuiz = () => {
   const getQuizByQuizId = async () => {
     try {
       const res = await axios.get(`https://quizie.ishownow.uk/api/quiz/getQuiz/${quizId}`);
-      console.log(res.data);
       setQuestion(res.data.question);
       setQuizType(res.data.quizType);
     } catch (err) {

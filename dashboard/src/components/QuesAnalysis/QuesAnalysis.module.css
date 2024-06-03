@@ -1,0 +1,102 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width:80vw;
+    height:100vh;
+    overflow-y: auto;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    gap:10vh;
+    align-items: center;
+}
+
+.container .topCont{
+    display: flex;
+    width:70vw;
+    justify-content: space-between;
+}
+
+.container .topCont h1{
+    color:#5076FF;
+}
+
+.container .topCont .rightCont{
+    display: flex;
+    flex-direction: column;
+    gap:0.2vh;
+}
+
+.rightCont p{
+    color:#FF5D01;
+}
+
+.bottomCont{
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+}
+
+.bottomCont .eachQuestion{
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+}
+
+.eachQuestion h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:black;
+}
+
+.eachQuestion .optionCont{
+    display: flex;
+    gap:3vw;
+}
+
+.eachOption{
+    height:12vh;
+    width:18vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eachOptionForPoll{
+    height:12vh;
+    width:18vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+}
+
+.eachOptionForPoll h1{
+    color:black;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-top:1.5vh;
+}
+
+.eachOptionForPoll  p{
+    margin-top: 1vh;
+    color:black;
+}
+
+.eachOption h1{
+    color:black;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-top:1.5vh;
+}
+
+.eachOption p{
+    color:black;
+}

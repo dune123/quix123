@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.supercontainer{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.container{
+    width:85vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+.container h1{
+    margin-top:9vh;
+    font-family: Jomhuria;
+    font-size: 2.9rem;
+    margin-bottom: 3vh;
+}
+
+.container .buttons{
+    display: flex;
+    gap:9vw
+}
+
+.buttons button{
+    width:15vw;
+    height:5vh;
+    background-color: white;
+    border:none;
+    font-family: 'Poppins';
+    font-size:1.4rem;
+    margin-bottom: 6vh;
+    cursor: pointer;
+    color:black;
+}
+
+.SignupContainer{
+    width:40vw;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    gap:7vh;
+}
+
+.SignupContainer form{
+    display: flex;
+    flex-direction: column;
+    gap:4vh;
+}
+
+form div{
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5vh;
+}
+
+form div label{
+    margin-left: 2vw;
+    font-size: 1.1rem;
+    color:black;
+}
+
+form div input{
+    width:25vw;
+    height:100%;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    background-color: #F2F2F2;
+    border: none;
+    padding-left: 1vw;
+}
+
+.SignupContainer button{
+    width:17vw;
+    height:5vh;
+    margin-left:13vw;
+    background-color: #A9BCFF;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    color: black;
+}
+
+.Toastify__close-button {
+    width: 2vw; /* Adjust the width as needed */
+    height: 2vh; /* Adjust the height as needed */
+}

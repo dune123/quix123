@@ -1,0 +1,262 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+    color:#9F9F9F;
+}
+
+.superContainer{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    top:0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:60vw;
+    height:80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container .questions{
+    display: flex;
+    margin-top: 4vh;
+    width:48vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questionAdd{
+    display: flex;
+    gap:1vw;
+    align-items: center;
+}
+
+.questionAdd .plus{
+    font-size: 1.5rem;
+}
+
+.questionAdd .quesContainer{
+    position: relative;
+    height: 7vh;
+    width: 3.5vw;
+    border-radius: 1.6rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quesContainer .closeButton{
+    position: absolute;
+    top:0px;
+    right:-0.3px;
+    cursor: pointer;
+}
+
+.questionAdd .typeContainer{
+    width:48vw;
+    height:6vh;
+}
+
+.typeContainer{
+    margin-top: 6vh;
+    width:48vw;
+    height:7vh;
+}
+
+.typeContainer input{
+    height:100%;
+    width:100%;
+    padding-left: 1vw;
+    font-size: 1.2rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border:none;
+}
+
+.optionType{
+    margin-top: 3vh;
+    width:48vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.optionType div{
+    display: flex;
+    gap:0.5vw;
+}
+
+.optionType div input{
+    color:black;
+    cursor: pointer;
+}
+
+.answerOptions{
+    display: flex;
+    width:52vw;
+    height:38vh;
+    justify-content: space-between;
+    margin-top:3vh;
+}
+
+.answerOptions .totalOptions{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+}
+
+.totalOptions div{
+    display: flex;
+    gap:1.3vw;
+    align-items: center;
+}
+
+.totalOptions div .deleteButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red; 
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.totalOptions div .optionText{
+    height: 5vh;
+    width:15vw;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius:0.5rem;
+    color:#9F9F9F;
+    padding-left: 0.5vw;
+    font-size:1.2rem;
+}
+
+.addOptions{
+    width:15.5vw;
+    margin-left:2vw;
+    height:5vh;
+    border-radius: 0.5rem;
+    border:none;
+    background-color: white;
+    color:#9F9F9F;
+    font-size:1.2rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+}
+
+.deleteButton{
+    cursor: pointer;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5vh;
+    margin-top: 16vh;
+}
+
+.timer button{
+    width:5vw;
+    height:4vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 0.3rem;
+    border:none;
+    color:#9F9F9F;
+    background-color: white;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    width:48vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer button{
+    width:20vw;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 5vh;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cancel{
+    color:black;
+}
+
+.createQuiz{
+    color:white;
+    background-color:#60B84B;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+  
+.option.selected .optionText {
+    background-color: lightgreen;
+    color:white;
+}
+
+.radio.selected {
+    background-color: lightgreen;
+}
+
+.cardCont p{
+    position: relative;
+    top:2vh;
+    left:53vw;
+    color:#474444;
+}
+
+.cardCont .cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vh;
+    width:40vw;
+    margin-left: 8vw;
+    margin-top:8vh;
+}
+
+.cardCont h1{
+    color:black;
+}
+
+.cardContent div{
+    width:100%;
+    background-color: #EDEDED;
+    color:black;
+    height:6vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    font-size:1.2rem;
+    border-radius: 1.2rem;
+}
+
+.cardCont button{
+    width:15vw;
+    height:7vh;
+    background-color: #60B84B;
+    color:white;
+    border-radius:1.2rem;
+    border:none;
+    font-size:1.3rem
+}

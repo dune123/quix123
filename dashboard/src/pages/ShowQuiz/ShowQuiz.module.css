@@ -1,0 +1,156 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: #041325;
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    top:0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 80vw;
+    /*height:80vh;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:7vh;
+    padding-bottom: 5vh;
+}
+
+.top{
+    width:75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.top h1{
+    color:black;
+}
+
+.bottom{
+    width:75vw;
+    display: flex;
+    flex-direction: column;
+    gap:4vh;
+}
+
+.bottom .question{
+    color:#474444;
+    font-size: 2.4rem;
+}
+
+.bottom .options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:3vh;
+}
+
+.options .opty{
+    width:24vw;
+    height:16vh;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.opty p{
+    color:black;
+}
+
+.opty img{
+    width:100%;
+    height:100%;
+}
+
+.buttons button{
+    height:8vh;
+    width:19vw;
+    background-color: #60B84B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
+
+.opty4{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opty4 img{
+    width:40%;
+    height:90%;
+    margin-right:0.6vw;
+    border-radius: 0.8rem;
+}
+
+.opty4 p{
+    font-size:1.4rem;
+    margin-left:0.8vw;
+}
+
+.cardForPoll{   
+    width:80vw;
+    height:60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@media (max-width:428px){
+    .card{
+        width:100vw;
+        height:100vh;
+    }
+
+    .card .question{
+        font-size: 1.6rem;
+    }
+
+    .bottom .options{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+
+    .options .opty{
+        width:100%;
+        height:10vh;
+    }
+
+    .buttons button{
+        width:50vw;
+        height:6vh;
+        border-radius: 0.6rem;
+    } 
+    .cardForPoll{
+        width:100vw;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding-left: 10vw;
+    }
+}

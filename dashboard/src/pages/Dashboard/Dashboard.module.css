@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+}
+
+.leftContainer{
+    width:20vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.leftContainer p{
+    cursor: pointer;
+}
+
+.leftContainer h1{
+    font-family:  'Jomhuria';
+    margin-top:2vh;
+}
+
+.leftContainer .logout{
+    margin-bottom: 2vh;
+}
+
+.leftContainer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:8vh;
+}
+
+ul li{
+    width:18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5rem;
+    height:6vh;
+    cursor:pointer;
+}
+
+.logout{
+    height:7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.logout hr{
+    width:9vw;
+    font-size: 2.5rem;
+}

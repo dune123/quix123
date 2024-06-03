@@ -120,6 +120,7 @@ const Register = () => {
                     border: error ? "1px solid red" : null,
                     color: error ? "red" : null,
                   }}
+                  placeholder="email"
                 />
               </div>
               <div className={styles.PasswordCont}>
@@ -153,6 +154,7 @@ const Register = () => {
                     border: error ? "1px solid red" : null,
                     color: error ? "red" : null,
                   }}
+                  placeholder="confirm password"
                 />
               </div>
             </form>

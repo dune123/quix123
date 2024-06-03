@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const DeleteComp = ({ setIsDelete,quizId }) => {
   const token = localStorage.getItem("token");
   const deleteQuiz = async () => {
-    axios.delete(`http://localhost:3000/api/quiz/deleteQuiz/${quizId}`, {
+    axios.delete(`https://quizie.ishownow.uk/api/quiz/deleteQuiz/${quizId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -23,7 +23,7 @@ const DashBoardComp = () => {
 
 
   const getQuizInfo=async()=>{
-    await axios.get(`http://localhost:3000/api/auth/getquizinfo/${userId}`,{headers: {
+    await axios.get(`https://quizie.ishownow.uk/api/auth/getquizinfo/${userId}`,{headers: {
       'Authorization': `Bearer ${token}`
     }})
     .then((res)=>{

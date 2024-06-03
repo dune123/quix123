@@ -140,7 +140,7 @@ const AddPoll = ({ quiztype, quizName, setIsCreateQuiz, setShowMore }) => {
     axios.defaults.headers.common["Authorization"] = `${token}`;
     await axios
       .post(
-        "http://localhost:3000/api/quiz/addQuiz",
+        "https://quizie.ishownow.uk/api/quiz/addQuiz",
         {
           name: quizName,
           questions,

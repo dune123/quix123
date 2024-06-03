@@ -18,7 +18,7 @@ const ShowQuiz = () => {
 
   const getQuizByQuizId = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/api/quiz/getQuiz/${quizId}`);
+      const res = await axios.get(`https://quizie.ishownow.uk/api/quiz/getQuiz/${quizId}`);
       console.log(res.data);
       setQuestion(res.data.question);
       setQuizType(res.data.quizType);
@@ -90,7 +90,7 @@ const ShowQuiz = () => {
 
   const handleCheckAnswer = async () => {
     try {
-      const res = await axios.post(`http://localhost:3000/api/quiz/quizScore/${quizId}`, { answer });
+      const res = await axios.post(`https://quizie.ishownow.uk/api/quiz/quizScore/${quizId}`, { answer });
       setScore(res.data.score);
       setShowScore(true);
     } catch (err) {

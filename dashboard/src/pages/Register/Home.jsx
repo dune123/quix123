@@ -25,7 +25,7 @@ const Register = () => {
   const handleSignUp = async () => {
     try {
       await axios
-        .post(`http://localhost:3000/api/auth/register`, signupForm)
+        .post(`https://quizie.ishownow.uk/api/auth/register`, signupForm)
         .then((res) => {
           toast.success(res.data.message);
         })
@@ -51,7 +51,7 @@ const Register = () => {
   const handleLogin = async () => {
     try {
       await axios
-        .post(`http://localhost:3000/api/auth/login`, loginForm)
+        .post(`https://quizie.ishownow.uk/api/auth/login`, loginForm)
         .then((res) => {
           console.log(res);
           navigate("/dashboard");

@@ -9,7 +9,7 @@ const QuesAnalysis = ({selectedQues,quizName,createdAt,impressions,quizId,quizTy
     const token=localStorage.getItem('token')
  
     const handleEachQuestion=async()=>{
-        await axios.get(`http://localhost:3000/api/quiz/getallquizbyquizId/${quizId}`,{headers: {
+        await axios.get(`https://quizie.ishownow.uk/api/quiz/getallquizbyquizId/${quizId}`,{headers: {
       'Authorization': `Bearer ${token}`
        }})
         .then((res)=>{

@@ -168,7 +168,7 @@ const AddQuestion = ({ quiztype, quizName, setIsCreateQuiz, setShowMore }) => {
     }
     await axios
       .post(
-        "http://localhost:3000/api/quiz/addQuiz",
+        "https://quizie.ishownow.uk/api/quiz/addQuiz",
         {
           name: quizName,
           questions,

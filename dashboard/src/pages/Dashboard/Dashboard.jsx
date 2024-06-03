@@ -38,7 +38,7 @@ const Dashboard = () => {
   };
 
   const Logout=async()=>{
-    await axios.post("http://localhost:3000/api/auth/logout",{
+    await axios.post("https://quizie.ishownow.uk/api/auth/logout",{
       username
     },{headers: {
       'Authorization': `Bearer ${token}`

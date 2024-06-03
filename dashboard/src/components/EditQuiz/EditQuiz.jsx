@@ -122,7 +122,7 @@ const EditQuestion = ({ editableQuiz, setIsEditable,editQuizType }) => {
  
   const getQuiz = async () => {
     await axios
-      .get(`http://localhost:3000/api/quiz/getallquizbyquizId/${editableQuiz}`,{
+      .get(`https://quizie.ishownow.uk/api/quiz/getallquizbyquizId/${editableQuiz}`,{
         headers: {
             Authorization: `Bearer ${token}`,
         }
@@ -150,7 +150,7 @@ const EditQuestion = ({ editableQuiz, setIsEditable,editQuizType }) => {
       return;
     }
     await axios.put(
-      `http://localhost:3000/api/quiz/editQuiz/${editableQuiz}`,
+      `https://quizie.ishownow.uk/api/quiz/editQuiz/${editableQuiz}`,
       {
         questions,
       },

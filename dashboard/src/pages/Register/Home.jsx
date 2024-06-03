@@ -23,7 +23,6 @@ const Register = () => {
 
   const navigate = useNavigate();
   const handleSignUp = async () => {
-    try {
       await axios
         .post(`https://quizie.ishownow.uk/api/auth/register`, signupForm)
         .then((res) => {
@@ -37,10 +36,7 @@ const Register = () => {
             toast.error(error)
           }
         });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+    } 
 
   const CloseButton = ({ closeToast }) => (
     <i className="material-icons" onClick={closeToast}>
@@ -49,7 +45,6 @@ const Register = () => {
   );
 
   const handleLogin = async () => {
-    try {
       await axios
         .post(`https://quizie.ishownow.uk/api/auth/login`, loginForm)
         .then((res) => {
@@ -63,9 +58,7 @@ const Register = () => {
           console.log(err.response.data.message);
           toast.error(err.response.data.message);
         });
-    } catch (error) {
-      console.log(error);
-    }
+   
   };
   return (
     <div className={styles.supercontainer}>
@@ -100,6 +93,7 @@ const Register = () => {
                 <label>Name</label>
                 <input
                   type="text"
+                  placeholder="name must be greater than 5 charecters"
                   value={errorType!=="username"?signupForm.username:error}
                   onChange={(e) => {
                     setSignupForm((prev) => {
@@ -142,6 +136,7 @@ const Register = () => {
                     border: error ? "1px solid red" : null,
                     color: error ? "red" : null,
                   }}
+                  placeholder="password must contain atleat one of !@#$%^&*,.?"
                 />
               </div>
               <div className={styles.ConfirmPasswordCont}>

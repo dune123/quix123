@@ -43,8 +43,10 @@ const ShowQuiz = () => {
   
   useEffect(() => {
     let countdown;
-    if(timer==="off"){
-        handleNextClick();
+    if(selectedques===question.length-1){
+        if(timer===0){
+          handleNextClick();
+        }
     }
     else if (timer !== null && timer !== "off") {
       countdown = setInterval(() => {

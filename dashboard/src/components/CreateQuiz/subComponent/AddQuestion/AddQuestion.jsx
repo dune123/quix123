@@ -186,8 +186,7 @@ const AddQuestion = ({ quiztype, quizName, setIsCreateQuiz, setShowMore }) => {
         setShowFinalCard(true);
       })
       .catch((err) => {
-        console.log(err);
-        toast.error(err.data.message);
+        toast.error(err);
       });
   };
 

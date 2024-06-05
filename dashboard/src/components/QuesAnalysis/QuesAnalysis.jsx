@@ -72,7 +72,7 @@ const QuesAnalysis = ({selectedQues,quizName,createdAt,impressions,quizId,quizTy
                             <p>people Answered Correctly</p>
                             </div>
                             <div className={styles.eachOption}>
-                            <h1>{data.impressions&&data.correctAttempts?data.impressions-data.correctAttempts:"0"}</h1>
+                            <h1>{data.impressions||data.correctAttempts?data.impressions-data.correctAttempts:"0"}</h1>
                             <p>people Answered InCorrectly</p>
                             </div>
                         </div>

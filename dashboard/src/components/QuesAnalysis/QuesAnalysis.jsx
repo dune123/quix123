@@ -10,7 +10,7 @@ const QuesAnalysis = ({selectedQues,quizName,createdAt,impressions,quizId,quizTy
  
     const handleEachQuestion=async()=>{
         await axios.get(`https://quizie.ishownow.uk/api/quiz/getallquizbyquizId/${quizId}`,{headers: {
-      'Authorization': `Bearer ${token}`
+      'Authorization': `Bearer ${token}`     
        }})
         .then((res)=>{
             setTotalQues(res.data.question)
@@ -72,7 +72,7 @@ const QuesAnalysis = ({selectedQues,quizName,createdAt,impressions,quizId,quizTy
                             <p>people Answered Correctly</p>
                             </div>
                             <div className={styles.eachOption}>
-                            <h1>{data.impressions||data.correctAttempts?data.impressions-data.correctAttempts:"0"}</h1>
+                            <h1>{data.impressions-data.correctAttempts}</h1>
                             <p>people Answered InCorrectly</p>
                             </div>
                         </div>
